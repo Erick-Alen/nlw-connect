@@ -10,7 +10,7 @@ def subscribers_creator_validator(request: any):
                     "nome": {"type": "string", "required": True, "empty": False},
                     "email": {"type": "string", "required": True, "empty": False},
                     "link": {"type": "string", "required": False, "empty": False},
-                    "evento_id": {"type": "int", "required": True, "empty": False},
+                    "evento_id": {"type": "integer", "required": True, "empty": False},
                 },
             }
         }

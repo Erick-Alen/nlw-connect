@@ -1,9 +1,9 @@
 from flask import Blueprint, jsonify, request
 
-from src.http_types.http_request import HttpRequest
-from src.validators.events_creator_validator import events_creator_validator
 from src.controllers.events.events_creator import EventsCreator
+from src.http_types.http_request import HttpRequest
 from src.models.repositories.eventos_repository import EventosRepository
+from src.validators import events_creator_validator
 
 event_route_bp = Blueprint("event route", __name__)
 
