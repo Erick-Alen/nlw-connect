@@ -32,4 +32,4 @@ def test_ranking():
     ranking = subs_repo.get_referral_ranking(evento_id)
 
     for link in ranking:
-        print(f'Link: {link.nome} - Total subscribers: {link.total}')
+        print(f"Link: {link.nome} - Total subscribers: {link.total}")

@@ -1,6 +1,7 @@
 from .eventos_repository import EventosRepository
 import pytest
 
+
 @pytest.mark.skip("Insert in DB")
 def test_insert_events():
     # Arrange
@@ -10,6 +11,7 @@ def test_insert_events():
     repository.insert(event_name)
     # Assert
     assert repository.select_event(event_name) is not None
+
 
 def test_select_event():
     # Arrange

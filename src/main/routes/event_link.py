@@ -3,6 +3,7 @@ from flask import Blueprint, jsonify, request
 from src.controllers import EventsLinkCreator
 from src.http_types.http_request import HttpRequest
 from src.models.repositories import EventosLinkRepository
+
 event_link_route_bp = Blueprint("event link", __name__)
 
 

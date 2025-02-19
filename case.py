@@ -8,11 +8,13 @@ class MinhaClasse:
     __exit__(exc_type, exc_value, traceback):
         Prints "Saiu" when exiting the context.
     """
+
     def __enter__(self):
         print("Entrou")
 
     def __exit__(self, exc_type, exc_value, traceback):
         print("Saiu")
+
 
 with MinhaClasse() as mc:
     print("Executou dentro do contexto")

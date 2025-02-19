@@ -1,6 +1,8 @@
 from src.models.configs.connection import DBConnectionHandler
 from src.models.entities.eventos import Eventos
-from src.models.repositories.interfaces.eventos_repository import EventosRepositoryInterface
+from src.models.repositories.interfaces.eventos_repository import (
+    EventosRepositoryInterface,
+)
 
 
 class EventosRepository(EventosRepositoryInterface):
