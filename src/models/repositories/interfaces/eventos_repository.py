@@ -1,6 +1,7 @@
-from src.models.configs.connection import DBConnectionHandler
-from src.models.entities.eventos import Eventos
 from abc import ABC, abstractmethod
+
+from src.models.entities.eventos import Eventos
+
 
 class EventosRepositoryInterface(ABC):
     @abstractmethod
