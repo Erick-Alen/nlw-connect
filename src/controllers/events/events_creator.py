@@ -1,7 +1,5 @@
 from src.http_types import HttpRequest, HttpResponse
-from src.models.repositories.interfaces.eventos_repository import (
-    EventosRepositoryInterface,
-)
+from src.models.repositories.interfaces import EventosRepositoryInterface
 
 
 class EventsCreator:

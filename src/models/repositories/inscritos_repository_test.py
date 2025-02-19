@@ -24,3 +24,12 @@ def test_select_subscriber():
     sub = repository.select_subscriber(email, evento_id)
     print(sub)
     print(sub.nome)
+
+
+def test_ranking():
+    evento_id = 3
+    subs_repo = InscritosRepository()
+    ranking = subs_repo.get_referral_ranking(evento_id)
+
+    for link in ranking:
+        print(f'Link: {link.nome} - Total subscribers: {link.total}')

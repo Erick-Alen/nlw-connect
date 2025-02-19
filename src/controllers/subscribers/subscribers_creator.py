@@ -1,9 +1,7 @@
 from typing import Dict
 
 from src.http_types import HttpRequest, HttpResponse
-from src.models.repositories.interfaces.inscritos_repository import (
-    InscritosRepositoryInterface,
-)
+from src.models.repositories.interfaces import InscritosRepositoryInterface
 
 
 class SubscribersCreator:
